@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+# database configuration
+spring:
+  application:
+    name: Java-Developer-Task
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/javadeveloper-task?createDatabaseIfNotExist=true
+    username: username
+    password: password
+
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: false
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
